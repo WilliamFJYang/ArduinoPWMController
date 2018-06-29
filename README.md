@@ -7,7 +7,7 @@ Arduino Uno
 
 To User:
 
-  This's Code for PWM signal output, and I diliver in three mode. 
+  This's Code for PWM signal output, and I divide in three mode. 
   All of program can be rewrited to fit different situations , just change the parameters at the top of program
 
 Mode I  :
@@ -29,7 +29,11 @@ Mode II :
     Program name    : PWM_asynchronous
     Signal freqence : 60  Hz (default)
     Output Voltage  : 4.7 V
-    depiction       : In this mode, User set duty_cycle for signal_1 at first,and signal_1 will be a stantard. Second, User set Timing  andduty_cycle.(Ex: Timing=200 >>> signal_2 leading signal_1 200 microsecend|||Timing=-300 >>> signal_2 laging signal_1  300 microsecend) 
+    depiction       : In this mode, User set duty_cycle for signal_1 at first,and signal_1 will be a stantard. Second, User set Timing
+    
+                      andduty_cycle.(Ex: Timing=200 >>> signal_2 leading signal_1 200 microsecend|||Timing=-300 >>> signal_2 laging
+    
+                      signal_1  300 microsecend) 
   
     Output Pin :
       Pin-7 :  duty cycle => 0.6%  pulse width => 100 microsecend
