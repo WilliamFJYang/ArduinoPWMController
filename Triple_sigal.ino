@@ -21,7 +21,7 @@ void setup()
   Array[2] = period_us*Dutycycle_III/100;
   for (int a=0; a<3; a++){
     for (int b=a; b<3; b++){
-        if( Array[b] < Array[a] ) {
+        if( Array[b] < Array[a] ) { 
                 temp = Array[b];
                 Array[b] = Array[a];
                 Array[b] = temp;
