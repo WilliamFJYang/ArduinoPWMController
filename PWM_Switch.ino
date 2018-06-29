@@ -1,4 +1,4 @@
-int outPin_500us = 8;                 // digital pin 8
+int outPin_500us = 8;                  // digital pin 8
 int outPin_333us = 7;
 int outPin_100us = 4;
 int inPut_analog = 2;
