@@ -21,7 +21,7 @@ void setup()
   Array[2] = period_us*Dutycycle_III/100;
   for (int a=0; a<3; a++){
     for (int b=a; b<3; b++){
-        if( Array[b] < Array[a] ) { 
+        if( Array[b] < Array[a] ) {
                 temp = Array[b];
                 Array[b] = Array[a];
                 Array[b] = temp;
@@ -38,20 +38,20 @@ void loop()
       digitalWrite(Channel_I   , HIGH);
       digitalWrite(Channel_II  , HIGH);
       digitalWrite(Channel_III , HIGH);
-      delayMicroseconds(Array[0]);
+      delayMicroseconds(Array[2]);
       //Serial.print(Array[0]);
       //Serial.print("\r\n");
       digitalWrite(Channel_III, LOW);
-      delayMicroseconds(Array[1]-Array[0]);
+      delayMicroseconds(Array[1]-Array[2]);
       //Serial.print(Array[1]);
       //Serial.print("\r\n");
       digitalWrite(Channel_II , LOW);
-      delayMicroseconds(Array[2]-Array[1]);
+      delayMicroseconds(Array[0]-Array[1]);
       digitalWrite(Channel_I  , LOW);
       //Serial.print(Array[2]);
       //Serial.print("\r\n");
-      period_ms = (period_us-Array[2])/10000;
-      period_us = (period_us-Array[2])%10000;
+      period_ms = (period_us-Array[0])/10000;
+      period_us = (period_us-Array[0])%10000;
       delayMicroseconds(period_us);
       delay(period_ms*10);
 
