@@ -30,9 +30,7 @@ Mode II :
     Signal freqence : 60  Hz (default)
     Output Voltage  : 4.7 V
     depiction       : In this mode, User set duty_cycle for signal_1 at first,and signal_1 will be a stantard. Second, User set Timing
-    
                       andduty_cycle.(Ex: Timing=200 >>> signal_2 leading signal_1 200 microsecend|||Timing=-300 >>> signal_2 laging
-    
                       signal_1  300 microsecend) 
   
     Output Pin :
