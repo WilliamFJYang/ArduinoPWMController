@@ -3,6 +3,7 @@ For Lite-ON VSA Team
 
 User envirement:
 arduino-1.0.1 IDE
+Download http://downloads.arduino.cc/arduino-1.0.1-windows.zip
 Arduino Uno
 
 To User:
