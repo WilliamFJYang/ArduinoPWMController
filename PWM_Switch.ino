@@ -5,7 +5,7 @@ int inPut_analog = 2;
 int val=0;
 int counter=0;
 int Duty_Time[3] = {480,320,100};
-int Low_Pos = 16666;
+int Low_Pos = 16666; 
 void setup()
 {
   pinMode(outPin_500us, OUTPUT);      // sets the digital pin as output
