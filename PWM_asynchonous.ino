@@ -44,18 +44,35 @@ void loop()
           delay(10);
         }  
       else{
-         digitalWrite(outPin_100us, HIGH);
-  
-        delayMicroseconds(500);
-         digitalWrite(outPin_100us, LOW);
-         delayMicroseconds(2500);
-        digitalWrite(outPin_500us, HIGH);
-        
-        digitalWrite(outPin_100us, LOW);
-        delayMicroseconds(500);
-        digitalWrite(outPin_500us, LOW);
-   
-        delayMicroseconds(3166);  
-        delay(10); 
+         if(Dutycycle_1>Dutycycle_2){
+            digitalWrite(outPin_100us, HIGH);
+
+            delayMicroseconds(500);
+            digitalWrite(outPin_100us, LOW);
+            delayMicroseconds(2500);
+            digitalWrite(outPin_500us, HIGH);
+
+            digitalWrite(outPin_100us, LOW);
+            delayMicroseconds(500);
+            digitalWrite(outPin_500us, LOW);
+
+            delayMicroseconds(3166);  
+            delay(10); 
+         }
+         else{
+            digitalWrite(outPin_100us, HIGH);
+
+            delayMicroseconds(500);
+            digitalWrite(outPin_100us, LOW);
+            delayMicroseconds(2500);
+            digitalWrite(outPin_500us, HIGH);
+
+            digitalWrite(outPin_100us, LOW);
+            delayMicroseconds(500);
+            digitalWrite(outPin_500us, LOW);
+
+            delayMicroseconds(3166);  
+            delay(10); 
+         }
       }
 }
